@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <title>send | Bitypeer</title>
+  </head>
+  <body class="pt-16 bg-white">
+    <header class="fixed z-40 bg-white h-16 w-full top-0 left-0">
+      <div class="container mx-auto px-5">
+        <!-- Top Navigation -->
+        <div class="flex items-center justify-between h-16">
+          <a href="publicCoin.html" class="block uupercase tracking-tighter text-2xl basis-4/12">
+            <i class="fa-solid fa-chevron-left"></i>
+          </a>
+          <div class="basis-4/12 text-center whitespace-nowrap text-xl uppercase">send (Public)</div>
+          <div class="basis-4/12"></div>
+        </div>
+      </div>
+    </header>
+    <main class="py-3 px-5">
+      <section class="container mx-auto">
+        <!-- Exchange -->
+        <div
+          class="px-5 py-6 border border-blue-50 rounded-xl bg-no-repeat bg-left-bottom"
+          style="
+            background-image: url(https://img.freepik.com/free-vector/gradient-hexagonal-background_23-2148932756.jpg?t=st=1657355816~exp=1657356416~hmac=90153f519c64ac3859cc3abc4f88fe22d2c78268b40e0f6b05b7b68aa02c9653&w=1380);
+          "
+        >
+          <div class="flex flex-col">
+            <div class="flex items-center justify-between">
+              <div class="uppercase tracking-tighter font-semibold">coin balance</div>
+            </div>
+          </div>
+          <div class="mt-5 text-end">
+            <div class="text-2xl tracking-tighter font-semibold">1,000,000,000,000,000</div>
+            <div class="ml-2 text-sm font-semibold">WRC</div>
+          </div>
+          <div class="flex items-center justify-start">
+            <div class="text-sm">08,AUg,2021 24:00:00</div>
+            <div
+              class="ml-2 cursor-pointer border-2 border-gray-900 w-5 h-5 rounded-full flex items-center justify-center"
+            >
+              <i class="fa-solid fa-rotate fa-xs"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-8 px-2">
+          <div class="grid grid-cols-1 gap-4">
+            <!-- Coin Balace -->
+            <div class="col-span-1">
+              <div class="tracking-tight font-semibold">Coin Balance</div>
+              <div class="relative mt-2">
+                <input
+                  type="text"
+                  placeholder="Please enter coin balance"
+                  class="border py-3 w-full pl-5 pr-10 rounded-full border-blue-500 ring-blue-600"
+                />
+                <div class="absolute text-blue-500 cursor-pointer top-3 right-5">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tron USDT Address -->
+            <div class="col-span-1">
+              <div class="flex justify-start items-center">
+                <div class="tracking-tight font-semibold">Address</div>
+                <div class="ml-5 cursor-pointer">
+                  <a href="#">
+                    <i class="fa-solid fa-qrcode fa-xl"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="relative mt-2">
+                <input
+                  type="text"
+                  placeholder="Please enter coin balance"
+                  class="border py-3 w-full pl-5 pr-10 rounded-full border-blue-500 ring-blue-600"
+                />
+                <div class="absolute text-blue-500 cursor-pointer top-3 right-5">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full pt-10 px-2">
+          <button class="btn btn-rounded btn-exlarge btn-yellow w-full uppercase">Send</button>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/datepicker.js"></script>
+  </body>
+</html>

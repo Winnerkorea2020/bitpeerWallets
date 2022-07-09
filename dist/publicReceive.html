@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <title>Receive | Bitypeer</title>
+  </head>
+  <body class="pt-16 bg-white">
+    <header class="fixed z-40 bg-white h-16 w-full top-0 left-0">
+      <div class="container mx-auto px-5">
+        <!-- Top Navigation -->
+        <div class="flex items-center justify-between h-16">
+          <a href="publicCoin.html" class="block uupercase tracking-tighter text-2xl basis-4/12">
+            <i class="fa-solid fa-chevron-left"></i>
+          </a>
+          <div class="basis-4/12 text-center whitespace-nowrap text-xl uppercase">Receive (Public)</div>
+          <div class="basis-4/12"></div>
+        </div>
+      </div>
+    </header>
+    <main class="py-3 px-5">
+      <!-- Timer Circle Area -->
+      <section>
+        <div class="pt-10">
+          <div class="text-center tracking-tighter text-lg">
+            + Share your QR code or copy address <br />
+            to receive
+          </div>
+        </div>
+        <div class="flex justify-center items-center pt-10">
+          <div class="w-44 h-44 border border-blue-500">
+            <!-- QR Area -->
+            <div
+              class="w-full h-full bg-cover bg-no-repeat"
+              style="
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/220px-QR_code_for_mobile_English_Wikipedia.svg.png);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center pt-8 tracking-tighter">My Coin Address</div>
+      </section>
+
+      <!-- Mining System Graph Area -->
+      <section class="mt-5 px-2">
+        <div class="p-5 border border-blue-500 rounded-2xl">
+          <div class="">Address</div>
+          <div class="text-sm w-full truncate mt-3">
+            2daefef1e1231efawefs0029a090cdf050f2eass123123fesafasefasefaaaefa
+          </div>
+          <div class="pt-5 w-full">
+            <button class="w-full btn btn-exlarge btn-default uppercase">copy</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/datepicker.js"></script>
+  </body>
+</html>

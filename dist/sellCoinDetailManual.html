@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <title>Sell Coins Detail | Bitypeer</title>
+  </head>
+  <body class="pt-16">
+    <header class="fixed z-40 bg-white h-16 w-full top-0 left-0">
+      <div class="container mx-auto px-5">
+        <!-- Top Navigation -->
+        <div class="flex items-center justify-between h-16">
+          <a href="main.html" class="block uupercase tracking-tighter text-2xl basis-4/12">
+            <i class="fa-solid fa-chevron-left"></i>
+          </a>
+          <div class="basis-4/12 text-center whitespace-nowrap text-xl uppercase">Sell Coins Detail</div>
+          <div class="basis-4/12"></div>
+        </div>
+      </div>
+    </header>
+    <main class="px-5 mt-5">
+      <section class="container mx-auto">
+        <div class="grid grid-cols-1 gap-2">
+          <div class="col-span-1">
+            <div class="mb-2">Coin Name</div>
+            <input type="text" value="WRC" disabled class="py-3 px-5 border w-full rounded-xl uppercase text-end" />
+          </div>
+          <div class="col-span-1">
+            <div class="mb-2">Amonut of coins</div>
+            <input
+              type="text"
+              class="py-3 px-7 border w-full rounded-xl uppercase tracking-tighter text-end"
+              id="price"
+              onkeyup="inputNumberFormat(this)"
+              maxlength="30"
+              placeholder="999,999,999,999"
+            />
+          </div>
+          <div class="col-span-1">
+            <div class="mb-2">Price</div>
+            <div class="flex items-center justify-between">
+              <input
+                type="text"
+                class="basis-9/12 py-3 px-7 border w-full rounded-xl uppercase tracking-tighter text-end"
+                id="price"
+                onkeyup="inputNumberFormat(this)"
+                maxlength="30"
+                placeholder="999,999,999,999"
+              />
+              <div class="ml-2 basis-3/12 text-center py-3 px-7 border w-full rounded-xl uppercase tracking-tighter">
+                usd
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-1">
+            <div class="mb-2">Seller</div>
+            <input type="text" value="Jonyleong" disabled class="py-3 px-5 border w-full rounded-xl text-end" />
+          </div>
+
+          <div class="col-span-1">
+            <div class="mb-2">Chatting</div>
+            <a href="chatting.html" class="block btn btn-exlarge btn-orange text-center">
+              <span class="font-semibold">Touch the button to chat.</span>
+            </a>
+          </div>
+
+          <div class="col-span-1">
+            <div class="mb-2">Detail Contents</div>
+            <div class="w-full">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="15"
+                class="w-full border border-gray-300 resize-none rounded-lg px-5 py-8"
+              ></textarea>
+            </div>
+          </div>
+          <div class="bg-gray-200 rounded-2xl py-8 px-10">
+            <div class="badge badge-default badge-rounded w-40 text-center px-5">
+              <span class="text-lg">Sell hours</span>
+            </div>
+            <div class="mt-5">
+              <p class="text-base">
+                UTC basis. UTC is the standard time difference for each region based on the UK(UTC+0:00).
+              </p>
+              <div class="mt-5">
+                <div class="grid grid-cols-1 gap-2">
+                  <div class="flex justify-start items-center">
+                    <div class="basis-2/12">Sun</div>
+                    <div class="basis-10/12 ml-2 flex items-center gap-2">
+                      <div class="">00:00</div>
+                      <div class="">-</div>
+                      <div class="">24:00</div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-start items-center">
+                    <div class="basis-2/12">Mon</div>
+                    <div class="basis-10/12 ml-2 flex items-center gap-2">
+                      <div class="">00:00</div>
+                      <div class="">-</div>
+                      <div class="">24:00</div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-start items-center">
+                    <div class="basis-2/12">Tue</div>
+                    <div class="basis-10/12 ml-2 flex items-center gap-2">
+                      <div class="">00:00</div>
+                      <div class="">-</div>
+                      <div class="">24:00</div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-start items-center">
+                    <div class="basis-2/12">Wed</div>
+                    <div class="basis-10/12 ml-2 flex items-center gap-2">
+                      <div class="">00:00</div>
+                      <div class="">-</div>
+                      <div class="">24:00</div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-start items-center">
+                    <div class="basis-2/12">Thu</div>
+                    <div class="basis-10/12 ml-2 flex items-center gap-2">
+                      <div class="">00:00</div>
+                      <div class="">-</div>
+                      <div class="">24:00</div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-start items-center">
+                    <div class="basis-2/12">Fri</div>
+                    <div class="basis-10/12 ml-2 flex items-center gap-2">
+                      <div class="">00:00</div>
+                      <div class="">-</div>
+                      <div class="">24:00</div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-start items-center">
+                    <div class="basis-2/12">Sat</div>
+                    <div class="basis-10/12 ml-2 flex items-center gap-2">
+                      <div class="">00:00</div>
+                      <div class="">-</div>
+                      <div class="">24:00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 mb-8">
+          <div class="flex justify-between items-center">
+            <a
+              href=""
+              class="tracking-tighter block w-full text-center btn btn-exlarge btn-rounded btn-default uppercase mr-1"
+              >Buy request</a
+            >
+            <a
+              href=""
+              class="tracking-tighter block w-full text-center btn btn-exlarge btn-rounded btn-red uppercase ml-1"
+              >cancel</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/js/sideNavigation.js"></script>
+    <script src="./assets/js/inputnumbercurrent.js"></script>
+    <script src="./assets/js/tab.js"></script>
+  </body>
+</html>

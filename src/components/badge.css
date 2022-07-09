@@ -2,8 +2,8 @@
   @apply text-xs font-semibold  px-2.5 py-0.5 rounded;
 }
 
-.bgdge-large {
-  @apply text-sm font-medium  px-2.5 py-0.5;
+.badge-large {
+  @apply text-base font-medium  px-3 py-0.5;
 }
 
 .badge-rounded {
