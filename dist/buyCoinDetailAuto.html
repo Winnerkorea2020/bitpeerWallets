@@ -45,7 +45,8 @@
               id="price"
               onkeyup="inputNumberFormat(this)"
               maxlength="30"
-              placeholder="999,999,999,999"
+              value="999,999,999,999"
+              disabled
             />
           </div>
           <div class="col-span-1">
@@ -57,9 +58,12 @@
                 id="price"
                 onkeyup="inputNumberFormat(this)"
                 maxlength="30"
-                placeholder="999,999,999,999"
+                value="999,999,999,999"
+                disabled
               />
-              <div class="ml-2 basis-3/12 text-center py-3 px-7 border w-full rounded-xl uppercase tracking-tighter">
+              <div
+                class="ml-2 basis-3/12 text-center py-3 px-7 border w-full rounded-xl uppercase tracking-tighter bg-gray-200"
+              >
                 usd
               </div>
             </div>
@@ -167,7 +171,7 @@
               >coin transfer</a
             >
             <a
-              href=""
+              href="buy.html"
               class="tracking-tighter block w-full text-center btn btn-exlarge btn-rounded btn-red uppercase ml-1"
               >cancel</a
             >
