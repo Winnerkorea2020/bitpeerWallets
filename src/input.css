@@ -10,6 +10,7 @@
 @import "./components/card.css";
 @import "./components/forget.css";
 @import "./components/detailTag.css";
+@import "./components/modal.css";
 
 .section {
   @apply container xl:max-w-full xl:px-10 mx-auto;
