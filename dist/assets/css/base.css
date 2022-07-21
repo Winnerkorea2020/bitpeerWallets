@@ -1446,6 +1446,10 @@ video {
   padding-right: 4rem;
 }
 
+.pr-8 {
+  padding-right: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2831,6 +2835,10 @@ h5 {
 
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:p-6 {
