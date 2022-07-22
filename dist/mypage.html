@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <title>Sell History | Bitypeer</title>
+  </head>
+  <body class="pt-16">
+    <header class="fixed z-40 bg-white h-16 w-full top-0 left-0">
+      <div class="container mx-auto px-5">
+        <!-- Top Navigation -->
+        <div class="flex items-center justify-between h-16">
+          <a href="main.html" class="block uupercase tracking-tighter text-2xl basis-4/12">
+            <i class="fa-solid fa-chevron-left"></i>
+          </a>
+          <div class="basis-4/12 text-center whitespace-nowrap text-xl uppercase">Sell History</div>
+          <div class="basis-4/12"></div>
+        </div>
+      </div>
+    </header>
+    <main class="px-5 mt-5">
+      <section class="container mx-auto">
+        <div class="">
+          <!-- ID / NAME / CLASS LIST | START -->
+          <div class="grid grid-cols-1 gap-3 mt-10">
+            <!-- ITEMS -->
+            <div class="flex justify-start items-center w-full">
+              <div class="w-24 uppercase">id</div>
+              <input
+                type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 datepicker-input"
+                placeholder="joesmith"
+              />
+            </div>
+
+            <div class="flex justify-start items-center w-full">
+              <div class="w-24 uppercase">E-Mail</div>
+              <input
+                type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 datepicker-input"
+                placeholder="dkfjdkj@naver.com"
+              />
+            </div>
+
+            <div class="flex justify-start items-center w-full">
+              <div class="w-24 uppercase">Class</div>
+              <input
+                type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 datepicker-input"
+                placeholder="seller"
+              />
+            </div>
+          </div>
+          <!-- ID / NAME / CLASS LIST | END -->
+          <div class="mt-10">
+            <p class="px-5">You cannot change your password in the app. If you want to change your password, please go to the Bitypeer website.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/js/sideNavigation.js"></script>
+    <script src="./assets/js/inputnumbercurrent.js"></script>
+    <script src="./assets/js/tab.js"></script>
+    <script src="./assets/js/datepicker.js"></script>
+  </body>
+</html>
