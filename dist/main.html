@@ -33,14 +33,18 @@
           <div class="absolute right-8">
             <div class="relative">
               <div class="absolute right-0 top-1 w-2 h-2 rounded-full bg-red-600"></div>
-              <div>
-                <i class="fa-solid fa-bell fa-lg"></i>
+              <div class="">
+                <i
+                  class="fa-solid fa-bell fa-lg cursor-pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                ></i>
               </div>
             </div>
           </div>
 
-          <div class="block cursor-pointer w-1/3 text-end nav__toggle">
-            <i class="fa-solid fa-bars fa-lg"></i>
+          <div class="block w-1/3 text-end">
+            <i class="fa-solid fa-bars fa-lg nav__toggle cursor-pointer"></i>
           </div>
         </div>
       </div>
@@ -99,12 +103,18 @@
         <div class="js-tabs" id="tabs">
           <ul class="js-tabs__header flex justify-between items-center">
             <li class="w-full">
-              <a href="#" class="js-tabs__title basis-1/2 block btn btn-rounded text-center mr-2 border-2 border-gray-200 uppercase"
+              <a
+                href="#"
+                class="js-tabs__title basis-1/2 block btn btn-rounded text-center mr-2 border-2 border-gray-200 uppercase"
                 >Affiliate Coins</a
               >
             </li>
             <li class="w-full">
-              <a href="#" class="js-tabs__title basis-1/2 block btn btn-rounded text-center ml-2 border-2 border-gray-200 uppercase">Public Coins</a>
+              <a
+                href="#"
+                class="js-tabs__title basis-1/2 block btn btn-rounded text-center ml-2 border-2 border-gray-200 uppercase"
+                >Public Coins</a
+              >
             </li>
           </ul>
 
@@ -251,7 +261,32 @@
       </section>
     </main>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content px-5 py-3 rounded-lg mt-5">
+          <div class="modal-header w-full text-center">
+            <h5 class="modal-title px-2 py-2 font-semibold" id="exampleModalLabel">Notice</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="w-fit px-8">
+              <ul class="list-disc px-2 tracking-tighter text-xs">
+                <li class="">A buy request has been received.</li>
+                <li class="">A sell request has been received.</li>
+                <li class="">Coin preemption has been matched.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer mt-5">
+            <button type="button" class="block w-full btn btn-exsmall btn-default" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./assets/js/sideNavigation.js"></script>
     <script src="./assets/js/tab.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
