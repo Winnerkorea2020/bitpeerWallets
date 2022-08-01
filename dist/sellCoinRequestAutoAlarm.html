@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <title>Sell Auto Buy Request | Bitypeer</title>
+  </head>
+  <body class="pt-16">
+    <header class="fixed z-40 bg-white h-16 w-full top-0 left-0">
+      <div class="container mx-auto px-5">
+        <!-- Top Navigation -->
+        <div class="flex items-center justify-between h-16">
+          <a href="sell.html" class="block uupercase tracking-tighter text-2xl basis-4/12">
+            <i class="fa-solid fa-chevron-left"></i>
+          </a>
+          <div class="basis-4/12 text-center whitespace-nowrap text-xl uppercase">Auto Buy Request</div>
+          <div class="basis-4/12"></div>
+        </div>
+      </div>
+    </header>
+    <main class="px-5 mt-5">
+      <section class="container mx-auto">
+        <div class="grid grid-cols-1 gap-2">
+          <div class="col-span-1">
+            <div class="mb-2">Coin Name</div>
+            <input type="text" value="WRC" disabled class="py-3 px-5 border w-full rounded-xl uppercase text-end" />
+          </div>
+          <div class="col-span-1">
+            <div class="mb-2">Amonut of coins</div>
+            <input
+              type="text"
+              class="py-3 px-7 border w-full rounded-xl uppercase tracking-tighter text-end"
+              id="price"
+              onkeyup="inputNumberFormat(this)"
+              maxlength="30"
+              value="999,999,999,999"
+              disabled
+            />
+          </div>
+          <div class="col-span-1">
+            <div class="mb-2">Price</div>
+            <div class="flex items-center justify-between">
+              <input
+                type="text"
+                class="basis-9/12 py-3 px-7 border w-full rounded-xl uppercase tracking-tighter text-end"
+                id="price"
+                onkeyup="inputNumberFormat(this)"
+                maxlength="30"
+                value="999,999,999,999"
+                disabled
+              />
+              <div
+                class="ml-2 basis-3/12 text-center py-3 px-7 border w-full rounded-xl uppercase tracking-tighter bg-gray-200"
+              >
+                usd
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-1">
+            <div class="mb-2">Buyer</div>
+            <input type="text" value="Jonyleong" disabled class="py-3 px-5 border w-full rounded-xl text-end" />
+          </div>
+
+          <div class="col-span-1">
+            <div class="mb-2">Message</div>
+            <div class="py-3 px-5 border w-full rounded-xl bg-blue-400 text-white">
+              <p>
+                Automatic mapping is in progress. If there is no response after 10 seconds, please cancel and try again.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-span-1">
+            <div class="mb-2">Auto Message</div>
+            <div class="py-3 px-5 border w-full rounded-xl bg-gray-200">
+              <p>
+                When you deposit money into that account, the seller will confirm and send you the coins. After payment
+                is complete, click Finish Transaction. If you need to chat with a seller, click CHAT WITH SELLER to
+                chat.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-span-1 relative">
+            <div class="mb-2">Chatting</div>
+            <a href="chatting.html" class="block btn btn-large btn-orange text-center">
+              <div
+                class="w-8 h-8 animate-bounce absolute inline-flex right-1 top-3 bg-red-500 justify-center items-center text-white rounded-full tracking-tighter font-semibold"
+              >
+                <span>99</span>
+              </div>
+              <span class="font-semibold uppercase">Chat with Seller</span>
+            </a>
+          </div>
+        </div>
+        <div class="mt-5 mb-8">
+          <div class="flex justify-between items-center">
+            <a
+              href=""
+              class="tracking-tighter block w-full text-center btn btn-large btn-rounded btn-dark uppercase mr-1"
+              >complete</a
+            >
+            <a
+              href="sell.html"
+              class="tracking-tighter block w-full text-center btn btn-large btn-rounded btn-red uppercase ml-1"
+              >cancel</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/js/sideNavigation.js"></script>
+    <script src="./assets/js/inputnumbercurrent.js"></script>
+    <script src="./assets/js/tab.js"></script>
+  </body>
+</html>
